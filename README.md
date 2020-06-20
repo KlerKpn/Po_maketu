@@ -1,2 +1,2 @@
 # Po_maketu
- empty
+ Scss, flex, html, response, grid
