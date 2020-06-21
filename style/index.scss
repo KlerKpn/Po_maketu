@@ -136,7 +136,9 @@ main{
     padding-top: 80px;
     padding-bottom: 80px;
     flex-wrap: wrap;
-        .contact-info{
+    
+        .contact-info{ 
+            max-width: 35%;           
             ul{
                 padding: 0;
                 li{
@@ -149,6 +151,9 @@ main{
                             color: black;
                         }  
                 }
+            }
+            @media screen and( max-width: 1300px) {
+               max-width: 100%;
             }
         }
 
@@ -165,13 +170,16 @@ main{
                     border: 0;
                     padding-left: 20px;
                     margin-bottom: 20px;
+                    font-size: .9rem;
                 }
                 textarea{
                     width: 100%;
                     border: none;
                     padding-left: 20px;
+                    padding-top: 20px;
                     resize: none;
                     margin-bottom: 20px;
+                    font-size: .9rem;
                 }
             }
 
@@ -201,7 +209,11 @@ main{
                 text-transform: uppercase;
                 letter-spacing: 0.1em;
             }
+            @media screen and( max-width: 1300px) {
+                width: 100%;
+            }
         }
+        
 }
 
 .map{

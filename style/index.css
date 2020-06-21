@@ -169,6 +169,10 @@ main {
       flex-wrap: wrap;
 }
 
+.contact .contact-info {
+  max-width: 35%;
+}
+
 .contact .contact-info ul {
   padding: 0;
 }
@@ -184,6 +188,12 @@ main {
 .contact .contact-info ul li .contact-name {
   text-decoration: underline;
   color: black;
+}
+
+@media screen and (max-width: 1300px) {
+  .contact .contact-info {
+    max-width: 100%;
+  }
 }
 
 .contact form {
@@ -203,14 +213,17 @@ main {
   border: 0;
   padding-left: 20px;
   margin-bottom: 20px;
+  font-size: .9rem;
 }
 
 .contact form div textarea {
   width: 100%;
   border: none;
   padding-left: 20px;
+  padding-top: 20px;
   resize: none;
   margin-bottom: 20px;
+  font-size: .9rem;
 }
 
 .contact form :nth-child(1) input {
@@ -235,6 +248,12 @@ main {
   padding-right: 20px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 1300px) {
+  .contact form {
+    width: 100%;
+  }
 }
 
 .map {
