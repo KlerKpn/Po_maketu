@@ -151,6 +151,98 @@ header .nav-bar ul li a:hover {
   background-color: #838383;
 }
 
+main {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .contact-info ul {
+  padding: 0;
+}
+
+.contact .contact-info ul li {
+  list-style-type: none;
+}
+
+.contact .contact-info ul li span {
+  color: #ccc;
+}
+
+.contact .contact-info ul li .contact-name {
+  text-decoration: underline;
+  color: black;
+}
+
+.contact form {
+  height: 400px;
+  width: 60%;
+}
+
+.contact form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact form div input {
+  background: white;
+  height: 50px;
+  border: 0;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.contact form div textarea {
+  width: 100%;
+  border: none;
+  padding-left: 20px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.contact form :nth-child(1) input {
+  width: 50%;
+}
+
+.contact form :nth-child(1) :nth-child(1) {
+  margin-right: 20px;
+}
+
+.contact form :nth-child(2) input {
+  width: 100%;
+}
+
+.contact form button {
+  background: #21bfb9;
+  height: 50px;
+  color: white;
+  border: none;
+  max-width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.map {
+  height: 450px;
+  max-width: 100%;
+  background: #ccc;
+}
+
 footer {
   max-width: 100%;
   height: 284px;
