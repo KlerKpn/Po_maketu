@@ -179,14 +179,15 @@ main {
 
 .contact .contact-info ul li {
   list-style-type: none;
+  margin-bottom: 12px;
 }
 
 .contact .contact-info ul li span {
-  color: #ccc;
+  color: #8b8b8b;
 }
 
 .contact .contact-info ul li .contact-name {
-  text-decoration: underline;
+  font-weight: bold;
   color: black;
 }
 
@@ -248,11 +249,26 @@ main {
   padding-right: 20px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  cursor: pointer;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.contact form button:hover {
+  -webkit-box-shadow: 0 0 8px #21bfb9;
+          box-shadow: 0 0 8px #21bfb9;
 }
 
 @media screen and (max-width: 1300px) {
   .contact form {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -265,6 +281,7 @@ main {
 footer {
   max-width: 100%;
   height: 284px;
+  margin-top: 80px;
   padding-right: 5%;
   padding-left: 5%;
   background-color: #141414;
@@ -304,5 +321,31 @@ footer .foot .foot-list ul {
 footer .foot .foot-list ul li {
   list-style-type: none;
   margin-bottom: 5px;
+}
+
+footer .foot .foot-list ul:nth-child(1) {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  footer {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  footer {
+    height: 184px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 15%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

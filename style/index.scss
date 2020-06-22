@@ -143,11 +143,12 @@ main{
                 padding: 0;
                 li{
                     list-style-type: none;
+                    margin-bottom: 12px;
                         span{
-                            color: #ccc;
+                            color: rgb(139, 139, 139);
                         }
                         .contact-name{
-                            text-decoration: underline;
+                            font-weight: bold;
                             color: black;
                         }  
                 }
@@ -208,12 +209,20 @@ main{
                 padding-right: 20px;
                 text-transform: uppercase;
                 letter-spacing: 0.1em;
+                cursor: pointer;
+                transition: all .3s ease 0s;
+                    &:hover{
+                        box-shadow: 0 0 8px #21bfb9;
+                    }
             }
             @media screen and( max-width: 1300px) {
                 width: 100%;
             }
         }
-        
+        @media screen and( max-width: 1300px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }   
 }
 
 .map{
@@ -226,6 +235,7 @@ main{
 footer{
     max-width: 100%;
     height: 284px;
+    margin-top: 80px;
     padding-right: 5%;
     padding-left: 5%;
     background-color: #141414;
@@ -248,8 +258,23 @@ footer{
                         li{ 
                             list-style-type: none; 
                             margin-bottom: 5px;
-                        }  
+                        } 
+                        &:nth-child(1){
+                            padding-left: 0;
+                        } 
                     }
                 }    
+        }
+        @media screen and( max-width: 1300px) {
+            margin-top: 80px;
+        }
+        @media screen and( max-width: 1030px) {
+            height: 184px;
+            flex-direction: column;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            align-items: flex-start;
+            padding-left: 15%;
+
         }
 }
