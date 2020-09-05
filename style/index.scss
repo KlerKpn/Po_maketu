@@ -162,10 +162,9 @@ main{
         form{
             height: 400px;
             width: 60%;
+            
             div{
                 display: flex;
-                
-                
                 input{
                     background: white;
                     height: 50px;
@@ -229,8 +228,11 @@ main{
 .map{
     height: 450px;
     max-width: 100%;
-    background: #ccc;
     margin-bottom: 80px;
+    @media screen and( max-width: 1300px) {
+        height: 300px;
+        margin-bottom: 40px;
+    }   
 }
 
 .new-project{
@@ -240,7 +242,7 @@ main{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: white;
+    background: rgb(245, 245, 245);
         span{
             text-align: center;
         }
@@ -289,6 +291,11 @@ main{
     padding-left: 5%;
     background: #10c9c3;
     height: 250px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .about-me{
@@ -310,9 +317,9 @@ main{
             }
         }
         .something{
-            
-           
-            }
+            background-image: url('../image/GCCIOdb3VLk.jpg');
+            background-size: cover;
+        }
         
         .my-info{
             background: white;
